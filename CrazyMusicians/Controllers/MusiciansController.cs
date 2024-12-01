@@ -8,8 +8,8 @@ namespace CrazyMusicians.Controllers
     [ApiController]
     public class MusiciansController : ControllerBase
     {
-        // GET: api/musicians
-        [HttpGet]
+        // GET: api/musicians/search(name)
+        [HttpGet("Search")]
         public IActionResult GetMusicians([FromQuery] string search = null)
         {
             var musicians = MusicianData.Musicians;
@@ -20,6 +20,14 @@ namespace CrazyMusicians.Controllers
                                                  m.Profession.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
             }
 
+            return Ok(musicians);
+        }
+
+        // GET: api/musicians
+        [HttpGet]
+        public IActionResult MusicianList()
+        {
+            var musicians = MusicianData.Musicians.ToList();
             return Ok(musicians);
         }
 
