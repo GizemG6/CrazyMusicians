@@ -107,7 +107,7 @@ namespace CrazyMusicians.Controllers
 
             MusicianData.Musicians.Remove(musician);
 
-            return Ok("Musician was deleted");
+            return Ok("Musician deleted successfully");
         }
     }
 }
