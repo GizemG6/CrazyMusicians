@@ -77,7 +77,6 @@ Request Body:
 Response Example:
 ```json
 {
-  "message": "Musician created successfully",
   "data": {
     "id": 11,
     "name": "New Musician",
@@ -104,7 +103,6 @@ Request Body:
 Response Example:
 ```json
 {
-  "message": "Musician updated successfully",
   "data": {
     "id": 3,
     "name": "Cemil Akor",
@@ -128,7 +126,6 @@ Request Body:
 Response Example:
 ```json
 {
-  "message": "Musician updated successfully",
   "data": {
     "id": 2,
     "name": "Zeynep Melodi",
